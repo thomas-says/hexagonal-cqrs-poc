@@ -1,0 +1,6 @@
+api:
+    resource:
+        path: ../src/Infrastructure/Symfony/Controller/API
+        namespace: App\Infrastructure\Symfony\Controller\API
+    type: attribute
+    prefix: /api

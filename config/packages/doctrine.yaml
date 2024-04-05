@@ -1,0 +1,14 @@
+doctrine:
+    dbal:
+        url: '%env(resolve:DATABASE_URL)%'
+        profiling_collect_backtrace: '%kernel.debug%'
+        use_savepoints: true
+    orm:
+        mappings:
+            App:
+                type: xml
+                is_bundle: false
+                dir: '%kernel.project_dir%/config/doctrine'
+                prefix: 'App\Domain\Model'
+                alias: App
+        auto_mapping: true
